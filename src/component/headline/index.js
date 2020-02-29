@@ -23,16 +23,4 @@ class Headline extends Component {
     }
 }
 
-Headline.propTypes = {
-    header: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    tempArr: PropTypes.arrayOf(PropTypes.shape({
-        fName: PropTypes.string,
-        lName: PropTypes.string,
-        email: PropTypes.string,
-        age: PropTypes.number,
-        onlineStatus: PropTypes.bool
-    }))
-};
-
 export default Headline;

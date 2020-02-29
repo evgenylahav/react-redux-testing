@@ -12,7 +12,7 @@ describe('fetchPosts actions', () => {
         moxios.uninstall();
     });
 
-    test("should update the store correctly", () => {
+    it("should update the store correctly", () => {
         const expectedState = [
             {
                 title: "example title 1",

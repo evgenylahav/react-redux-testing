@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class ListItem extends Component {
 
@@ -19,10 +18,5 @@ class ListItem extends Component {
         );
     }
 }
-
-ListItem.propTypes = {
-    title: PropTypes.string,
-    desc: PropTypes.string,
-};
 
 export default ListItem;

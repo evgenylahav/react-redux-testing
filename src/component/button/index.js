@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class SharedButton extends Component {
 
@@ -20,10 +19,5 @@ class SharedButton extends Component {
         );
     }
 }
-
-SharedButton.propTypes = {
-    buttonText: PropTypes.string,
-    emitEvent: PropTypes.func,
-};
 
 export default SharedButton;
