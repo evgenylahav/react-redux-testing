@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 class Headline extends Component {
     constructor(props) {
         super(props);
     }
+    
     render() {
         const { header, desc } = this.props;
 
@@ -20,5 +22,17 @@ class Headline extends Component {
         );
     }
 }
+
+Headline.propTypes = {
+    header: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    tempArr: PropTypes.arrayOf(PropTypes.shape({
+        fName: PropTypes.string,
+        lName: PropTypes.string,
+        email: PropTypes.string,
+        age: PropTypes.number,
+        onlineStatus: PropTypes.bool
+    }))
+};
 
 export default Headline;
