@@ -8,14 +8,6 @@ import ListItem from "./component/listItem";
 import { fetchPosts } from './actions';
 
 
-const tempArr = [{
-    fName: "Jake",
-    lName: "Cohen",
-    email: "jakush@gmail.com",
-    age: 26,
-    onlineStatus: true
-}];
-
 class App extends Component {
     constructor(props) {
         super(props);
@@ -28,9 +20,7 @@ class App extends Component {
 
     render(){
         const { posts } = this.props;
-        console.log(posts);
         const articles = posts.data;
-        console.log(articles);
         const configButton = {
             buttonText: "Get posts",
             emitEvent: this.fetch,
@@ -41,7 +31,6 @@ class App extends Component {
                 <section className={"main"}>
                     <Headline header={"Posts"}
                                 desc={"Click the button to render posts!"}
-                                tempArr={tempArr}
                     />
                 
                     <SharedButton {...configButton} />
